@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beatriz Becker</title>
+
+    <style>
+    *{
+        margin: 0;
+        padding: 0;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+        h1{
+            color:rgba(102, 187, 164, 0.877);
+        }
+        header {    
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 60px;
+            background-color: rgba(157, 230, 211, 0.877);
+            color: white;
+        }
+        ul li{
+            list-style-type: none;
+        }
+        header ul{
+            display: flex;
+            gap: 30px;
+        }
+        header a{   
+            text-decoration: none;
+            color: rgba(78, 153, 133, 0.877);
+        }
+        .logo{
+            color: rgba(78, 153, 133, 0.877);
+        }
+        .section{
+            border-bottom: 2px solid #999999;
+            display: flex;
+            justify-content: space-around;
+            padding: 20px 60px;
+        }
+        .meio{
+            text-align: center;
+            width: 100%;
+            padding: 70px;
+            background-color: rgb(157, 230, 211, 0.877);
+        }
+        .direita img{
+            width: 400px;
+            box-shadow: 20px 20px 20px rgb(157, 230, 211, 0.877);
+            border-radius: 30px;
+        }
+        .direita, .esquerda{
+            width: 50vw;
+        }
+        .projeto{
+            width: 29%;
+            display: flex;
+            flex-direction: column;
+            background-color: rgb(123, 192, 175);
+            gap: 20px;
+            padding: 20px;
+            text-align: center;
+        }
+        #projetos{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 5px;
+        }
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 100px;
+            z-index: 1;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+
+    </style>
+</head>
+<body>
+    <main>
+        <header>
+            <div class="logo">
+                <p>Beatriz Becker</p>
+            </div>
+            <nav>
+            <ul>
+            <li><a href="#Home">Home</a></li>
+            <li><a href="#Sobre">Sobre mim</a></li>
+            <div class="dropdown">
+                <a href="#" class="dropbtn" >Projetos</a>
+                <div class="dropdown-content">
+                    <a href="">1° trimestre</a>
+                    <a href="">2° trimestre</a>
+                    <a href="">3° trimestre</a>
+                </div>
+            </div>
+            </li>
+            </ul>
+            </nav>
+        </header>
+        <!-- inicio da sessão home -->
+        <div class="section" id="Home">     
+            <div class="esquerda">
+                <h1>Bem vindo ao meu Portfolio</h1>
+                <p>Aqui vou apresentar minhas atividades do curso desenvolvimentos de sistemas no Senai</p>
+            </div>
+            <div class= "direita">
+                <img src="https://i.pinimg.com/474x/87/5c/97/875c97582183a1f315d7e3b4c36a4be3.jpg" alt="">
+            </div>
+        </div> <!-- final da sessão home-->
+        
+        <!-- inicio da sessão sobre -->
+        <div class="section" id="Sobre">
+            <div class="meio">
+                <h2>Sobre mim</h2>
+                <p>
+                    Meu nome é Beatriz Becker Feldman, tenho 15 anos, sou de São José (Santa Catarina) e atualmente estou no primeiro ano do ensino médio na escola S (Sesi Senai). Na escola S estou cursando o desenvolvimento de sistemas pois dentre as opções essa é a que eu mais me encaixo e me chama a atenção devido a grande procura dessa profissão no mercado de trabalho.<br>
+                </p>
+            </div>
+        </div>
+        <!-- final da sessão sobre -->
+        <!-- iniciando sessão de projetos -->
+        <div class="section" id="Projetos">
+            <div class="projeto">
+                <img src="https://media.licdn.com/dms/image/D4D12AQHdA2__YPkgNw/article-cover_image-shrink_720_1280/0/1681555878627?e=2147483647&v=beta&t=Ad_FaCTUecvQO6SF94_EcklV4VYXGK3-VXuEtdFlWwo" alt="">
+                <h3>Projeto 1</h3>
+                <p>Projeto sobre componentes de computadores</p>
+            </div>
+        </div>
+            <div class="projeto">
+                <img src="https://media.licdn.com/dms/image/D4D12AQHdA2__YPkgNw/article-cover_image-shrink_720_1280/0/1681555878627?e=2147483647&v=beta&t=Ad_FaCTUecvQO6SF94_EcklV4VYXGK3-VXuEtdFlWwo" alt="">
+                <h3>Projeto 1</h3>
+                <p>Projeto sobre componentes de computadores.</p>
+            </div>
+        </div>
+            <div class="projeto">
+                <img src="https://media.licdn.com/dms/image/D4D12AQHdA2__YPkgNw/article-cover_image-shrink_720_1280/0/1681555878627?e=2147483647&v=beta&t=Ad_FaCTUecvQO6SF94_EcklV4VYXGK3-VXuEtdFlWwo" alt="">
+                <h3>Projeto 1</h3>
+                <p>Projeto sobre componentes de computadores.</p>
+            </div>
+        </div>
+    </main>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
